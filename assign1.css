@@ -1,0 +1,144 @@
+*{
+    width: 100%;
+    margin: 0;
+    padding:0;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: aqua;
+}
+.container{
+    margin-top: 10%;
+   margin-left: 20%;
+    display: flex;
+    box-shadow: 10px;
+    /* justify-content: center; */
+    border-radius: 20px 20px 20px 20px;
+    padding-left: 10px;
+    background-color: bisque;
+    width: 70%;
+    height: 400px;
+}
+.img{
+    box-sizing: border-box;
+    position:right;
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+    
+    
+}
+.information{
+    /* width: 500px; */
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5px;
+    padding-right: 30px;
+    padding-top: 20px;
+}
+.information h1{
+    /* text-align:center; */
+    text-shadow: 20px;
+    font-weight: bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+
+}
+.information p{
+padding-top: 10px;
+text-align:center;
+text-shadow: 20px;
+font-weight: 20px;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+margin-top: 10px;
+}
+.footer{
+    padding-top:50px;
+    display:flex;
+    flex-direction: row;
+    position:relative;
+
+}
+.logo{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    transition: transform .2s;
+    color:darkmagenta;
+    
+    
+}
+.logo:hover {
+    transform: scale(1.5);
+    
+}
+.share{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    float: right;
+    transition: transform .2s;
+    
+}
+.share:hover{
+    transform: scale(1.5);
+
+}
+
+.logoinfo{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 120px;
+}
+.profile-name {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+
+}
+.profile-date{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.nondisplay{
+    display: none;
+}
+.nondisplay:hover{
+display: flex;
+}
+/* add media query */
+@media screen  and (max-width: 800px)  {
+.container{
+flex-direction: column;
+width:410px;
+height: 820px;
+padding-top: 1px;
+padding-bottom: 1px;
+margin-left: 20px;
+
+}
+
+ .image {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.information {
+    width: 400px;
+    max-height: 100px ;
+   
+}
+
+.footer {
+    height: 50px;
+    width: 390px;
+    
+}
+
+    
+ } 
+ 
+
+
